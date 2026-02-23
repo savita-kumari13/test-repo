@@ -11,6 +11,6 @@ jobs:
       
       - uses: savita-kumari13/my-ai-review@main
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PR_REVIEW_TOKEN }}
           pr-number: ${{ github.event.pull_request.number }}
           model: 'codellama:7b'
